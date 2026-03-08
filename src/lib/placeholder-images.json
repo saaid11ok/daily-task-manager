@@ -1,0 +1,16 @@
+{
+  "placeholderImages": [
+    {
+      "id": "app-icon",
+      "description": "TaskFlow App Icon",
+      "imageUrl": "https://picsum.photos/seed/taskflow-icon/512/512",
+      "imageHint": "task checkmark"
+    },
+    {
+      "id": "hero-illustration",
+      "description": "Productivity Illustration",
+      "imageUrl": "https://picsum.photos/seed/productivity/800/600",
+      "imageHint": "focus work"
+    }
+  ]
+}

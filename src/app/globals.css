@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 15% 96%;
+    --foreground: 220 40% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 10%;
+    --primary: 220 70% 45%;
+    --primary-foreground: 220 10% 98%;
+    --secondary: 220 20% 90%;
+    --secondary-foreground: 220 70% 45%;
+    --muted: 220 10% 90%;
+    --muted-foreground: 220 20% 45%;
+    --accent: 190 80% 55%;
+    --accent-foreground: 190 10% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 85%;
+    --input: 220 20% 85%;
+    --ring: 220 70% 45%;
+    --radius: 0.75rem;
+    --chart-1: 220 70% 45%;
+    --chart-2: 190 80% 55%;
+    --chart-3: 200 60% 40%;
+    --chart-4: 180 50% 65%;
+    --chart-5: 210 40% 50%;
+  }
+
+  .dark {
+    --background: 220 40% 10%;
+    --foreground: 220 10% 96%;
+    --card: 220 30% 12%;
+    --card-foreground: 220 10% 96%;
+    --popover: 220 30% 12%;
+    --popover-foreground: 220 10% 96%;
+    --primary: 220 70% 55%;
+    --primary-foreground: 220 10% 10%;
+    --secondary: 220 30% 20%;
+    --secondary-foreground: 220 70% 55%;
+    --muted: 220 30% 18%;
+    --muted-foreground: 220 20% 65%;
+    --accent: 190 80% 55%;
+    --accent-foreground: 190 10% 10%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 30% 20%;
+    --input: 220 30% 20%;
+    --ring: 220 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    /* Prevent elastic scrolling and handle safe areas for PWA */
+    overscroll-behavior-y: none;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-top: env(safe-area-inset-top);
+  }
+  
+  /* Optimize for mobile touch targets */
+  button, [role="button"], a {
+    @apply touch-manipulation;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
